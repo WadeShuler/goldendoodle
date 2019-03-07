@@ -1,0 +1,227 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+}
+
+#navbar .navbar {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+#navbar .navbar-toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#navbar .navbar-collapse {
+  background-color: #fff;
+}
+#navbar .navbar-nav {
+  width: 68%;
+  float: right;
+}
+#navbar .navbar-nav .nav-item {
+  -webkit-transition: 0.5s ease;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#navbar .navbar-nav .nav-item:hover .underbar {
+  width: 100%;
+  background: #07a724;
+}
+#navbar .navbar-nav .nav-item .nav-link {
+  color: #07a724;
+  color: #07a724;
+  font-weight: 600;
+  width: max-content;
+}
+#navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #05771a;
+  color: #05771a;
+}
+#navbar .navbar-nav .nav-item .nav-link.disabled {
+  color: #6c757d;
+}
+#navbar .navbar-nav .nav-item.active .nav-link {
+  color: #05771a;
+  color: #05771a;
+}
+#navbar .navbar-wrap {
+  position: relative;
+  height: 53px;
+  background-color: #fff;
+  border-bottom: 2px solid #d9d9d9;
+  width: 100%;
+  z-index: 13;
+}
+#navbar .navbar-logo {
+  position: absolute;
+  left: 25px;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  margin-top: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+#navbar .navbar-logo .logo-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+#navbar .navbar-logo .logo-content .circle-border {
+  position: absolute;
+  z-index: 8;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background-color: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  border: 2px solid #d9d9d9;
+}
+#navbar .navbar-logo .logo-content .logo-wrap {
+  position: relative;
+  z-index: 9;
+  padding: 6px;
+}
+#navbar .navbar-logo .logo-content .logo-container-fluid {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+#navbar .navbar-logo .logo-content .logo-container-fluid img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home-intro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.home-intro h2 {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #394456;
+  padding: 25px 0;
+}
+footer .nav .nav-link {
+  color: #fff;
+}
+footer .social-buttons a {
+  font-size: 28px;
+  text-decoration: none;
+  color: #fff;
+}
+footer .social-buttons a:hover {
+  text-decoration: none;
+}
+footer .social-buttons a.facebook:hover {
+  color: #4267b2;
+  color: #4267b2;
+}
+footer .social-buttons a.youtube:hover {
+  color: #ED3833;
+  color: #ed3833;
+}
+
+.btn-yellow {
+  background-color: #f6da3d;
+  color: #333;
+  font-weight: 600;
+  transition: all .15s;
+  btn-fade-in: .5s;
+}
+
+.btn-yellow:hover {
+  background-color: #e95342;
+  color: #fff;
+}
+
+.btn-green {
+  background-color: #40c0aa;
+  color: #fff;
+  font-weight: 600;
+  transition: all .15s;
+  btn-fade-in: .5s;
+}
+
+.btn-green:hover {
+  background-color: #208473;
+  color: #fff;
+}
+
+.underbar {
+  width: 0;
+  height: 3px;
+  background: #07a724;
+  top: 0;
+  -webkit-transition: 0.5s ease;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  footer .inner-box {
+    margin: 10px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    padding-top: 62px !important;
+  }
+
+  #navbar .navbar {
+    margin-left: 200px;
+  }
+  #navbar .navbar-wrap {
+    height: 62px;
+  }
+  #navbar .navbar-logo {
+    width: 85px;
+    height: 85px;
+    left: 95px;
+    padding: 0;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/* reverse the media query to handle navbar differences */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 53px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+  }
+}
+body {
+  font-family: "Montserrat", "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  min-height: 30rem;
+  padding-top: 53px;
+}
+
+#goldenHomepageSlider .carousel-inner {
+  height: 80vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+#goldenHomepageSlider .carousel-inner img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
