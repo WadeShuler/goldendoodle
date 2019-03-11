@@ -29,24 +29,24 @@ header {
 }
 #navbar .navbar-nav .nav-item:hover .underbar {
   width: 100%;
-  background: #07a724;
+  background: #3aa6ca;
 }
 #navbar .navbar-nav .nav-item .nav-link {
-  color: #07a724;
-  color: #07a724;
+  color: #3aa6ca;
   font-weight: 600;
   width: max-content;
 }
+#navbar .navbar-nav .nav-item .nav-link:visited {
+  color: #3aa6ca;
+}
 #navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #05771a;
-  color: #05771a;
+  color: #277691;
 }
 #navbar .navbar-nav .nav-item .nav-link.disabled {
   color: #6c757d;
 }
 #navbar .navbar-nav .nav-item.active .nav-link {
-  color: #05771a;
-  color: #05771a;
+  color: #277691;
 }
 #navbar .navbar-wrap {
   position: relative;
@@ -114,10 +114,14 @@ header {
 }
 
 footer {
-  background-color: #394456;
   padding: 25px 0;
 }
 footer .nav .nav-link {
+  color: #fff;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+footer .inner-box p {
   color: #fff;
 }
 footer .social-buttons a {
@@ -135,6 +139,9 @@ footer .social-buttons a.facebook:hover {
 footer .social-buttons a.youtube:hover {
   color: #ED3833;
   color: #ed3833;
+}
+footer .copyright-line {
+  color: #fff;
 }
 
 .btn-yellow {
@@ -166,14 +173,158 @@ footer .social-buttons a.youtube:hover {
 .underbar {
   width: 0;
   height: 3px;
-  background: #07a724;
+  background: #277691;
   top: 0;
   -webkit-transition: 0.5s ease;
 }
 
+.background-grey {
+  background-color: #888e9a;
+}
+
+.background-darkblue {
+  background-color: #3c4459;
+}
+
+.background-lightbrown {
+  background-color: #d0b89c;
+}
+
+.background-darkbrown {
+  background-color: #4a4a4a;
+}
+
+.background-black {
+  background-color: #000;
+}
+
+body {
+  font-family: "Montserrat", "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  min-height: 30rem;
+  padding-top: 53px;
+}
+
+#goldenHomepageSlider {
+  min-height: 100px;
+}
+#goldenHomepageSlider .carousel-inner img {
+  width: 100%;
+}
+#goldenHomepageSlider .carousel-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.bg-img-smiling {
+  background: linear-gradient(rgba(208, 184, 156, 0.5), rgba(208, 184, 156, 0.5)), url("../images/smiling-goldendoodle.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  height: calc((100vw - 20px) * 0.5625);
+}
+
+.bg-boxes {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vw;
+  padding: 0;
+  position: relative;
+}
+
+.bg-box-1 {
+  background-image: url("../images/boxes/1-resized.png");
+}
+
+.bg-box-2 {
+  background-image: url("../images/boxes/2-resized.png");
+}
+
+.bg-box-3 {
+  background-image: url("../images/boxes/3-resized.png");
+}
+
+.bg-box-4 {
+  background-image: url("../images/boxes/4-resized.png");
+}
+
+.box-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.box-link-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.box-link:active, .box-link:visited {
+  text-decoration: none;
+}
+
+.box-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.box-head {
+  position: static;
+  line-height: 1;
+  margin-top: 11vw;
+  font-size: 14px;
+  text-align: center;
+}
+
+.box-subhead {
+  font-size: 28px;
+  text-align: center;
+}
+
+.box-cta {
+  display: block;
+  bottom: 4vw;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.adopt-today {
+  background-color: #f6f6f6;
+}
+.adopt-today .adopt-headline {
+  margin-top: 11vw;
+  margin-bottom: 11vw;
+}
+
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .bg-boxes {
+    height: 33.5vw !important;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .adopt-today {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/golden-large-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: calc((100vw - 20px) * 0.5625);
+  }
+
   footer .inner-box {
     margin: 10px;
   }
@@ -207,21 +358,6 @@ footer .social-buttons a.youtube:hover {
     background-color: #fff;
     width: 100%;
   }
-}
-body {
-  font-family: "Montserrat", "Open Sans", Helvetica, Verdana, Arial, sans-serif;
-  min-height: 30rem;
-  padding-top: 53px;
-}
-
-#goldenHomepageSlider .carousel-inner {
-  height: 80vh;
-  min-height: 400px;
-  overflow: hidden;
-}
-#goldenHomepageSlider .carousel-inner img {
-  width: 100%;
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
