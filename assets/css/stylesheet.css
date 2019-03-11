@@ -5,6 +5,17 @@ header {
   z-index: 12;
 }
 
+#navbar .navbar-greyline {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #828282;
+  padding: 0;
+  margin: 0;
+  z-index: 15;
+}
 #navbar .navbar {
   background-color: #fff;
   padding-top: 10px;
@@ -32,6 +43,10 @@ header {
   width: 100%;
   background: #b1864e;
 }
+#navbar .navbar-nav .nav-item .logo-img-wrap {
+  z-index: 60;
+  position: relative;
+}
 #navbar .navbar-nav .nav-item .nav-link {
   color: #b1864e;
   font-weight: 600;
@@ -48,6 +63,7 @@ header {
 }
 #navbar .navbar-nav .nav-item.logo-item {
   padding-top: 0px;
+  z-index: 55;
 }
 #navbar .navbar-nav .nav-item.active .nav-link {
   color: #7c5e37;
@@ -57,7 +73,6 @@ header {
   background-color: #fff;
   border-bottom: 2px solid #d9d9d9;
   width: 100%;
-  z-index: 13;
 }
 #navbar .navbar-logo {
   position: absolute;
