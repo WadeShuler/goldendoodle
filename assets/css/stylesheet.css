@@ -224,15 +224,19 @@ footer .copyright-line p {
   color: #d2d2d2 !important;
 }
 
+.background-darkbrown {
+  background-color: #6f5e4b;
+}
+
 .background-lightbrown {
   background-color: #d0b89c;
 }
 
-.background-darkbrown {
+.background-darkgrey {
   background-color: #4a4a4a;
 }
 
-.background-grey {
+.background-lightgrey {
   background-color: #777777;
 }
 
