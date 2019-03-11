@@ -70,6 +70,7 @@ header {
 }
 #navbar .navbar-wrap {
   position: relative;
+  height: 53px;
   background-color: #fff;
   border-bottom: 2px solid #d9d9d9;
   width: 100%;
@@ -78,12 +79,9 @@ header {
   position: absolute;
   left: 25px;
   z-index: 2;
-  width: 80px;
-  height: 80px;
   margin-top: 0;
   padding: 0;
   margin: 0;
-  border-radius: 50%;
 }
 #navbar .navbar-logo .logo-content {
   position: relative;
@@ -234,6 +232,10 @@ footer .copyright-line p {
   background-color: #4a4a4a;
 }
 
+.background-grey {
+  background-color: #777777;
+}
+
 .background-black {
   background-color: #000;
 }
@@ -375,9 +377,12 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body {
-    padding-top: 62px !important;
+    padding-top: 178px !important;
   }
 
+  #navbar .navbar-wrap {
+    height: 178px;
+  }
   #navbar .navbar-logo {
     width: 85px;
     height: 85px;
