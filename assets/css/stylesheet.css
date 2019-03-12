@@ -154,6 +154,10 @@ footer .inner-box.contact-snip {
 footer .inner-box.contact-snip p {
   margin-bottom: 1.2em;
 }
+footer .inner-box.contact-snip .spacer {
+  margin-left: 10px;
+  margin-right: 12px;
+}
 footer .social-buttons a {
   font-size: 28px;
   text-decoration: none;
@@ -396,9 +400,6 @@ body {
 
   footer .inner-box {
     margin: 10px;
-  }
-  footer .inner-box.contact-snip {
-    padding-left: 4vw;
   }
 }
 /* Large devices (desktops, 992px and up) */

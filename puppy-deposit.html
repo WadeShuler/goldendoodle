@@ -113,6 +113,7 @@
                 </div>
 
                 <div class="col-6">
+
                     <form method="post">
                         <h3 class="mb-4 text-center">Puppy Deposit Payment</h3>
 
@@ -123,12 +124,12 @@
                         <input type="hidden" name="credits" value="510">
                         <input type="hidden" name="userid" value="1">
                         <input type="hidden" name="amount" id="amount" value="500">
-                        <input type="hidden" name="cpp_header_image" value="http://www.goldendoodlestudservice.com/images/goldendoodle-puppies-portland-oregon-goldendoodle-breeder.png">
+                        <input type="hidden" name="cpp_header_image" value="https://www.portlandgoldendoodles.com/assets/images/portland-goldendoodle-main-logo-300x300.png">
                         <input type="hidden" name="no_shipping" value="1">
                         <input type="hidden" name="currency_code" value="USD">
                         <input type="hidden" name="handling" value="0">
-                        <input type="hidden" name="cancel_return" value="http://www.goldendoodlestudservice.com/goldendoodle-puppy-portland-buy-form.php">
-                        <input type="hidden" name="return" value="http://www.goldendoodlestudservice.com/success.php">
+                        <input type="hidden" name="cancel_return" value="https://portlandgoldendoodles.com/goldendoodle-puppy-portland-purchase-form.php">
+                        <input type="hidden" name="return" value="https://portlandgoldendoodles.com/deposit-success.php">
 
                         <div class="form-group row">
                             <label for="staticAmount" class="col-sm-4 col-form-label">Amount:</label>
@@ -167,16 +168,17 @@
 
                         <div class="form-group">
                             <label for="inputPuppyGender">Gender of Puppy</label>
-                            <select class="form-control" name="puppy_gender" id="inputPuppyGender" required>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>No Preference</option>
+                            <select class="form-control" name="gender" id="inputPuppyGender" required>
+                                <option value=""> - Select your preference - </option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="NP">No Preference</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="inputMessage">Message</label>
-                            <textarea class="form-control" id="inputMessage" name="frmMessage" rows="3" required></textarea>
+                            <textarea class="form-control" id="inputMessage" name="frmMessage" rows="3"></textarea>
                         </div>
 
                         <div class="form-check form-check-inline mt-2 mb-2">
@@ -189,15 +191,18 @@
                                 <button type="submit" class="btn btn-gold float-right">Submit</button>
                             </div>
                         </div>
+
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
                     </form>
                 </div>
 
         </main>
 
             <footer class="container-fluid background-darkgrey">
-        <div class="row pb-3 pb-md-1">
 
-            <div class="col-12 col-md-6 order-md-6 mb-5 mb-md-0">
+        <div class="row pb-3 pb-md-1 justify-content-center">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
                 <div class="inner-box">
                     <p align="center">Sign up for our early bird adoption and announcements newsletter!</p>
                     <form>
@@ -213,50 +218,41 @@
                     </form>
                 </div>
             </div>
-
-            <div class="col-6 col-md-3 order-md-1">
-                <div class="inner-box">
-                    <nav class="nav flex-column">
-                        <a class="nav-link" href="#">Home</a>
-                        <a class="nav-link" href="#">About</a>
-                        <a class="nav-link" href="#">Contact</a>
-                    </nav>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3 order-md-12">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="inner-box social-buttons">
-                            <p align="center">
-                                <a href="https://www.facebook.com/portlandgoldendoodles" class="facebook">
-                                    <i class="fab fa-facebook 3x"></i>
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCRiWZT5IhxqqGKsFJOTSWpA" class="youtube">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="inner-box contact-snip">
-                            <p>
-                                Portland Goldendoodles<br \>
-                                South East Portland
-                            </p>
-                            <p><i class="fas fa-phone"></i> <a href="tel:+19254875047">(925) 487-5047</a></p>
-                            <p><i class="fas fa-envelope"></i> <a href="mail:PortlandGoldendoodles@gmail.com">Email Us</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <div class="row pt-4 pt-md-1">
-            <div class="col-12">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div class="inner-box social-buttons">
+                    <p align="center">
+                        <a href="https://www.facebook.com/portlandgoldendoodles" class="facebook">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCRiWZT5IhxqqGKsFJOTSWpA" class="youtube">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="inner-box contact-snip">
+                    <p align="center">
+                        Portland Goldendoodles<br \>
+                        South East Portland
+                    </p>
+                    <p align="center">
+                        <i class="fas fa-phone"></i> <a href="tel:+19254875047">(925) 487-5047</a>
+                        <span class="spacer">|</span>
+                        <i class="fas fa-envelope"></i> <a href="mail:PortlandGoldendoodles@gmail.com">Email Us</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-4 pt-md-2 justify-content-center">
+            <div class="col-12 col-md-6">
                 <div class="copyright-line">
                     <p align="center">&copy; Copyright 2019. All rights reserved.</p>
                 </div>
