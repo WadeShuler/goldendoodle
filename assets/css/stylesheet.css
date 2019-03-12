@@ -204,6 +204,19 @@ footer .copyright-line p {
   color: #fff;
 }
 
+.btn-gold {
+  background-color: #b1864e;
+  color: #000;
+  font-weight: 600;
+  transition: all .15s;
+  btn-fade-in: .5s;
+}
+
+.btn-gold:hover {
+  background-color: #7c5e37;
+  color: #000;
+}
+
 .underbar {
   width: 0;
   height: 3px;
@@ -242,6 +255,10 @@ footer .copyright-line p {
 
 .background-black {
   background-color: #000;
+}
+
+ul.basic-list {
+  list-style: none;
 }
 
 body {
@@ -353,6 +370,12 @@ body {
 .adopt-today .adopt-headline {
   margin-top: 11vw;
   margin-bottom: 11vw;
+}
+
+.facebook-wrap {
+  min-height: 500px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Small devices (landscape phones, 576px and up) */
